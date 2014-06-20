@@ -1,8 +1,8 @@
 % SISO的LS回波消除
 M = 16; % QAM调制阶数
 N = 1000000;% 符号个数
-SIRdB=30;%信扰比
-SNRdB=45;%信噪比
+SIRdB=20;%信扰比
+SNRdB=40;%信噪比
 %近端信号
 tx_near_code = randint(N,1,M);
 tx_near=modulate(modem.qammod(M),tx_near_code);
